@@ -1,15 +1,75 @@
 <!DOCTYPE html>
-<html>
-    <head></head>
-    <body>
-        <div>
-            <img src="C:\Users\Felix\Downloads\QR koodi projekti\qr-code-component-main\qr-code-component-main\images\image-qr-code.png" alt="QR kuva">
-        </div>
-        <div>
-            <h1>Improve your front-end skills by building projects</h1>
-        </div>
-        <div>
-            <h2>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</h2>
-        </div>
-    </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | QR code component</title>
+
+  <style>
+    body{
+      background-color:#d5e1ef;
+      font-family: 'Outfit', sans-serif;
+    }
+    
+    .container {
+      height: 100vh; /* Full viewport height */
+      display: flex;
+      justify-content: center; /* Horizontal center */
+      align-items: center;     /* Vertical center */
+    }
+
+    .my-square {
+      width: 430px;
+      height: 668px;
+      border: 2px solid white;
+      border-radius: 15px;
+      background-color: white;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .QRcode {
+      width: 400px;
+      border-radius: 10px;
+    }
+
+    .qr-wrapper {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     margin-bottom: 20px;
+     padding-top: 15px;
+    }
+
+    .teksti1 {
+      font-weight: bold;
+     font-size: 30px;
+     text-align: center;
+     margin-bottom: 10px;
+     color: #1d2c49;
+    }
+
+    .teksti2 {
+      font-size: 22px;
+      text-align: center;
+      color: gray;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="my-square">
+     <div class="qr-wrapper">
+       <img class="QRcode" src="images/image-qr-code.png" alt="QR code">
+   </div>
+     <p class="teksti1">Improve your front-end <br/> skills by building projects</p>
+     <p class="teksti2">Scan the QR code to visit Frontend  <br/>  Mentor and take your coding skills to <br/> the next level</p>
+  </div>
+
+</body>
 </html>
